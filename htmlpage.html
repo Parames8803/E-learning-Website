@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn 2 Code</title>
+    <script src="https://kit.fontawesome.com/656b895a4c.js" crossorigin="anonymous"></script>
+    <style>
+
+        body{
+            background-image: url("C:\Users\param\OneDrive\Desktop\website3\images\main_image.png");
+            overflow:initial;
+        }
+        .header{
+            display: flex;
+            align-items: center;
+            background-color: black;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+      
+        .header a{
+            color:white;
+            text-decoration: none;
+            border: 1px solid black;
+            border-top: 30px;
+            border-bottom: 30px;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            font-family:'Source Sans Pro',sans-serif ;
+            font-size: 17px;
+            cursor: pointer;
+            display: block;
+        }
+        .header span{
+            color:white;
+            text-decoration: none;
+            border: 1px solid black;
+            border-top: 30px;
+            border-bottom: 30px;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            font-family:'Source Sans Pro',sans-serif ;
+            font-size: 17px;
+            cursor: pointer;
+            display: flex;
+        }
+        .header a:hover{
+            background-color: #ff00aa;
+            color: white;
+            border-color: #ff00aa;
+        }
+        .header span:hover{
+            background-color: #ff00aa;
+            color: white;
+            border-color: #ff00aa;
+        }
+
+
+        .topic{
+            background-color: white;
+        }
+
+        .topic h1{
+            padding-left: 25px;
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .nav{
+            display: flex;
+            align-items: center;
+        }
+        #home{
+            background-color: #ff00aa;
+            border: 1px solid #ff00aa;
+            margin-left: 28px;
+            padding: 10px;
+            width: 70px;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        #next{
+            background-color:#ff00aa ;
+            border: 1px solid #ff00aa;
+            margin-left: auto;
+            padding: 10px;
+            width: 70px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+
+        #top1{
+            color: black;
+            font-size: 30px;
+            margin-left: 25px;
+        }
+        #line1{
+            color: black;
+            margin-left: 25px;
+            font-size: 18px;
+        }
+        .example{
+            border: 5px solid rgb(193, 191, 191);
+            background-color: rgb(193, 191, 191);
+            border-radius: 5px;
+            height:350px;
+            width:600px;
+            margin-left: 25px;
+        }
+        .example h3{
+            margin-left: 20px;
+            font-family: "Segoe UI",Arial,sans-serif;
+            font-size: 24px;
+            font-weight:normal;
+        }
+        .example #ex1{
+            margin-left: 20px;
+            width: 550px;
+            height: 200px;
+            position: static;
+        }
+        .example #try1{
+            background-color: #ff00aa;
+            border: 1px solid #ff00aa;
+            margin-left: 20px;
+            padding: 5px;
+            width: 150px;
+            border-radius: 5px;
+            margin-top: 5px;
+            padding-top:10px;
+            padding-bottom: 10px;
+        }
+        .example #try1 a{
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+            font-size: 16px;
+        }
+        .icon{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+        }
+
+        .HTMLtutorial{
+            padding:10px 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a><i class="fa-solid fa-bars" style="display:block ;"></i></a>
+        <a href="index.html"><i class="fa-sharp fa-solid fa-house-chimney"></i></a>
+        <span  onclick="tutorialhtm()">HTML</span>
+        <span onclick="tutorialcss()">CSS</span>
+        <span onclick="tutorialjs()">JAVASCRIPT</span>
+        <span onclick="tutorialsql()">SQL</span>
+        <div class="icon">
+        <a href="https://www.google.com/"><i class="fa-solid fa-earth-americas"></i></a>
+        <a><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+    </div>
+
+    <div id="htmlframe" style="display:block;">
+    <section class="HTMLtutorial">
+        <div class="topic"><h1>HTML Tutorial</h1></div>
+        <div class="nav">
+            <button id="home"><a href="index.html" style="color:white; text-decoration:none;">Home</a></button>
+            <button id="next"><a href="index.html" style="color:white; text-decoration:none;">Next</a></button>
+        </div>
+        <div>
+            <h1 id="top1">Easy Learning with Html "Try it Yourself"</h1>
+            <p id="line1">With our "Try it Yourself" editor,you can edit the HTML code and view the result:</p>
+            <div class="example">
+                <h3>Example</h3>
+                <textarea  id="ex1" readonly>
+<!---<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>              
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>       
+</body>
+</html>--->
+                </textarea><br>
+                <a href="compiler.htm"><button id="try1" style="color:white;">Try it Yourself</button></a>
+        </div>
+        <div>
+            <h1 id="top1">HTML Introduction</h1>
+            <p id="line1">HTML is the standard markup language for creating Web pages.</p>
+            <p id="line1" style="font-weight:normal;">What is HTML?<br>
+                <ul><li> stands for Hyper Text Markup Language<br></li>
+                <li>HTML is the standard markup language for creating Web pages<br></li>
+                <li>HTML describes the structure of a Web page<br></li>
+                <li>HTML consists of a series of elements<br></li>
+                <li>HTML elements tell the browser how to display the content<br></li>
+                <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li></p></ul>
+            <div class="example">
+                <h3>A Simple HTML Document.</h3>
+                <textarea  id="ex1" readonly>
+<!---<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>--->
+                </textarea><br>
+                <a href="compiler.htm"><button id="try1" style="color:white;">Try it Yourself</button></a>
+            </div>
+        </div>
+        <div>
+            <h1 id="top1">Example Explained.</h1>
+            <p id="line1">
+                <ul>
+                <li> <!--<!DOCTYPE html>--> declaration defines that this document is an HTML5 document<br></li>
+                <li>The html element is the root element of an HTML page<br></li>
+                <li>The head element contains meta information about the HTML page<br></li>
+                <li>The title element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)<br></li>
+                <li>The body element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.<br></li>
+                <li>The h1 element defines a large heading<br></li>
+                <li>The p element defines a paragraph</p></ul>
+        </div>
+
+        <div>
+            <h1 id="top1">HTML Headings</h1>
+            <p id="line1">HTML headings are defined with the h1 to h6 tags.<br>
+                h1 defines the most important heading. h6 defines the least important heading: <br>
+                <b>Example</b><br>
+                <ul>
+                <li>h1  This is heading 1  /h1<br></li>
+                <li>h2  This is heading 2  /h2<br></li>
+                <li>h3  This is heading 3  /h3</p></li></ul>
+        </div>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/656b895a4c.js" crossorigin="anonymous"></script>
+    </div>
+    <div id="cssframe" style="display:none;">
+        <section class="HTMLtutorial">
+            <div class="topic"><h1>CSS Tutorial</h1></div>
+            <div class="nav">
+                <button id="home"><a href="index.html" style="color:white; text-decoration:none;">Home</a></button>
+                <button id="next"><a href="index.html" style="color:white; text-decoration:none;">Next</a></button>
+            </div>
+            <div>
+                <h1 id="top1">Easy Learning with CSS "Try it Yourself"</h1>
+                <p id="line1">This CSS tutorial contains hundreds of CSS examples</p>
+                <p id="line1">With our "Try it Yourself" editor,you can edit the CSS code and view the result:</p>
+                <div class="example">
+                    <h3>Example</h3>
+                    <textarea  id="ex1" readonly>
+    body {
+    background-color: lightblue;
+    }
+                          
+    h1 {
+    color: white;
+    text-align: center;
+    }
+                          
+    p {
+    font-family: verdana;
+    font-size: 20px;
+    }
+                    </textarea><br>
+                    <a href="compiler.htm"><button id="try1" style="color:white;">Try it Yourself</button></a>
+                </div>
+                <h1 id="top1">Use the Menu</h1>
+                <p id="line1">If you have a large screen, the menu will always be present on the left.
+
+                    If you have a small screen, open the menu by clicking the top menu sign ☰.</p>
+                <p id="line1">With our "Try it Yourself" editor,you can edit the CSS code and view the result:</p>
+                
+
+                <h1 id="top1">CSS Templates</h1>
+                <p id="line1">We have created some responsive W3.CSS templates for you to use.</p>
+                <h1 id="top1">CSS Solved a Big Problem</h1>
+                <p id="line1">CSS removed the style formatting from the HTML page!<br>
+                    CSS Demo - One HTML Page - Multiple Styles!<br>
+                    Here we will show one HTML page displayed with four different stylesheets. Click on the "Stylesheet 1", "Stylesheet 2"</p>
+                
+
+                <h1 id="top1">Three Ways to Insert CSS</h1>
+                <p id="line1">
+                    Inline CSS<br>
+                    External CSS</p>
+                <p id="line1">With an external style sheet, you can change the look of an entire website by changing just one file!<br>
+                    Each HTML page must include a reference to the external style sheet file inside the <link> element, inside the head section.
+                    </p>
+                <div class="example">
+                    <p>External styles are defined within the <link> element, inside the <head> section of an HTML page:</p>
+                    <textarea  id="ex1" readonly>
+    <!--- <!DOCTYPE html>
+    <html>
+     <head>
+    <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body>
+                        
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+    </body>
+    </html>-->
+                        
+                    </textarea><br>
+                    <a href="compiler.htm"><button id="try1" style="color:white;">Try it Yourself</button></a>
+                </div>
+                
+            </div>
+        </section>
+        <script src="https://kit.fontawesome.com/656b895a4c.js" crossorigin="anonymous"></script>
+    </div>
+    <div id="jsframe" style="display:none;">
+        <section class="HTMLtutorial">
+            <div class="topic"><h1>JavaScript Tutorial</h1></div>
+            <div class="nav">
+                <button id="home"><a href="index.html" style="color:white; text-decoration:none;">Home</a></button>
+                <button id="next"><a href="index.html" style="color:white; text-decoration:none;">Next</a></button>
+            </div>
+            <div>
+                <h1 id="top1">Easy Learning with JS "Try it Yourself"</h1>
+                <p id="line1">With our "Try it Yourself" editor,you can edit the HTML code and view the result:</p>
+                <div class="example">
+                    <h3>Example</h3>
+                    <textarea  id="ex1" readonly>
+    <!---<!DOCTYPE html>
+    <html>
+    <body>
+    
+    <h2>My First JavaScript</h2>
+    
+    <button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    Click me to display Date and Time.</button>
+    
+    <p id="demo"></p>
+    
+    </body>
+    </html>--->
+                    </textarea><br>
+                    <a href="compiler.htm"><button id="try1" style="color:white;">Try it Yourself</button></a>
+                </div>
+            </div>
+        </section>
+        <script src="https://kit.fontawesome.com/656b895a4c.js" crossorigin="anonymous"></script>
+    </div>
+    <div id="sqlframe" style="display:none;">
+        <section class="HTMLtutorial">
+            <div class="topic"><h1>SQL Tutorial</h1></div>
+            <div class="nav">
+                <button id="home"><a href="index.html" style="color:white; text-decoration:none;">Home</a></button>
+                <button id="next"><a href="index.html" style="color:white; text-decoration:none;">Next</a></button>
+            </div>
+            <div>
+                <h1 id="top1">Easy Learning with SQL "Try it Yourself"</h1>
+                <p id="line1">With our "Try it Yourself" editor,you can edit the SQL statements and click on a button to view the result:</p>
+                <div class="example">
+                    <h3>Example</h3>
+                    <textarea  id="ex1" readonly>
+        INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+        VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');
+                    </textarea><br>
+                    <a href="compiler.htm"><button id="try1" style="color:white;">Try it Yourself</button></a>
+                </div>
+            </div>
+    
+        </section>
+        <script src="https://kit.fontawesome.com/656b895a4c.js" crossorigin="anonymous"></script>    
+    </div>
+
+    <script>
+        let htmf= document.getElementById("htmlframe");
+        let cssf= document.getElementById("cssframe");
+        let jsf= document.getElementById("jsframe");
+        let sqlf= document.getElementById("sqlframe");
+        function tutorialhtm(){
+            htmf.style.display="block";
+            cssf.style.display="none";
+            jsf.style.display="none";
+            sqlf.style.display="none";
+        }
+        function tutorialcss(){
+            htmf.style.display="none";
+            cssf.style.display="block";
+            jsf.style.display="none";
+            sqlf.style.display="none";
+        }
+        function tutorialjs(){
+            htmf.style.display="none";
+            cssf.style.display="none";
+            jsf.style.display="block";
+            sqlf.style.display="none";
+        }
+        function tutorialsql(){
+            htmf.style.display="none";
+            cssf.style.display="none";
+            jsf.style.display="none";
+            sqlf.style.display="block";
+        }
+    </script>
+</body>
+</html>

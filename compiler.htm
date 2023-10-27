@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compiler</title>
+    <link rel="stylesheet" href="compiler.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="C:\Users\param\OneDrive\Desktop\website3\images\compiler.jpg">
+
+</head>
+<body>
+    <div class="header">
+        <i class="fa-solid fa-code"></i>
+        <h3 class="name">Online Compiler</h3>
+        <i class="fa-solid fa-play" onclick="run()" style="cursor: pointer; border: 1px solid rgb(217, 217, 217); padding: 10px; border-radius: 3px; background-color: rgb(217, 217, 217);"></i>
+    </div>
+
+    <div class="compiler-output">
+        <div class="compiler">
+            <div class="html-code">
+               <div style="text-align: right; width:100%;"><img id="save_ico" src="images/icons8-save-48.png" style="width: 20px; height: 20px; cursor: pointer;" onclick='btn_1()'></div> 
+                <textarea id="msg"><!--Practice Your HTML code--></textarea>
+            </div>
+            <div class="css-code">
+                <div style="text-align: right; width:100%;"><img id="save_ico_2" src="images/icons8-save-48.png" style="width: 20px; height: 20px; cursor: pointer;" onclick='btn_2()'></div>
+                <textarea id="msg1">/*Practice Your CSS code*/</textarea>
+            </div>
+            <div class="js-code">
+                <div style="text-align: right; width:100%;"><img id="save_ico_3" src="images/icons8-save-48.png" style="width: 20px; height: 20px; cursor: pointer;" onclick='btn_3()'></div>
+                <textarea id="msg2">//Practice Your JS code</textarea>
+            </div>
+        </div>
+        <div class="output_div" id="output-bar" >
+                <iframe id="output"></iframe>
+        </div>
+        <div class="hidden" id="hidden" style="display: none;">
+            <div class="head"><h3 style="margin-top: 15px;">Save your file as</h3></div>
+            <div class="file">
+                <input type="text" id="text" placeholder="Enter file name" style="width:70%; margin-bottom:8px;"> 
+                <select name="" id="select" style="width:50%; margin-bottom:8px;">
+                    <option value="text/html">Html file</option>
+                    <option value="text/css">Css file</option>
+                    <option value="text/javascript">Js file</option>
+                </select>
+                <button id="save" style="width:30%; margin-bottom:8px;" onclick="">Save file</button>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="compiler.js" defer></script>
+
+
+</body>
+</html>

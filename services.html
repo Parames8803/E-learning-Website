@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVICES</title>
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+    <header>
+        <div class="header-brand">
+            <h1>Learn <span>2 </span>Code  </h1>
+        </div>
+        <nav class="header-navbar">
+            <ul>
+                <li><a id="home" href="index.html">HOME</a></li>
+                <li><a id="about" href="about.html">LEARN</a></li>
+                <li><a id="services" href="services.html">SERVICES</a></li>
+                  <li><a id="contact" href="index.php">UPLOAD</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section-subscribe">
+        <div class="subscribe-newsletter">
+            <h3>Subscribe To know more about us</h3>
+        </div>
+        <div class="email">
+            <form action="mail.php" method="post">
+            <input type="Email" placeholder="Enter Email.." id="email__subscribe" name="email">
+            <button id="subscribe" type="submit">Subscribe</button>
+        </form>
+        </div>
+    </section>
+
+    <main class="main__services">
+        <section class="section__services">
+            <div class="section__services--header"><h3>Services</h3></div>
+            <div class="section__services--box">
+                <div class="website"><h3>Website Design</h3></div>
+                <div class="website"><p>We design a responsive websites for new learning mindset students,but here we are giving you the opportunities to develope your own websites.</p></div>
+                <div class="website"><p></p></div>
+            </div>
+            <div class="section__services--box">
+                <div class="website"><h3>Website Design Tutorials</h3></div>
+                <div class="website"><p>You can learn your web coding languages in here as a tutorials. The tutorials helps you to make webpages of your own.</p></div>
+                <div class="website"><p></p></div>
+            </div>
+            <div class="section__services--box">
+                <div class="website"><h3>Practice your Learning</h3></div>
+                <div class="website"><p>You can also practice your learn code from the tutorials and edit with them. The compiler makes you more learnable web designer in this field.</p></div>
+                <div class="website"><p></p></div>
+            </div>
+        </section>
+        <section class="section__quote">
+            <div class="section__quote--get">Get A Quote</div>
+            <form action="servicemail.php" method="post">
+                <label for="name">Name<br><input type="text" id="name" name="name" placeholder="Name"></label><br>
+                <label for="email">Email <br> <input type="email" id="email" name="email" placeholder="Email Address"></label><br>
+                <label for="message">Message <br> <input type="text" name="message" id="message"  placeholder="Message" name="message"></label>
+                <button id="send">Send</button>
+            </form>
+            
+        </section>
+
+    </main>
+
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendemail(){
+            Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "parameswaran8803@gmail.com",
+            Password : "prem8803##",
+            To : 'paramesh.e.cse.2021@snsce.ac.in',
+            From : document.getElementById("email").value,
+            Subject : "Your details from qoute",
+            Body : "And this is the body"
+            }).then(message => alert(message));
+        }
+    </script>
+</body>
+</html>
