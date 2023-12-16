@@ -1,7 +1,5 @@
 <?php
 
-
-
 $conn = mysqli_connect("localhost","root","","file_upload");
 
 $sql = "SELECT * FROM files";
@@ -43,7 +41,6 @@ else{
 
 if(isset($_GET['file_id']))
 { 
-
 
 $id = $_GET['file_id'];
 

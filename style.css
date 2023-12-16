@@ -1,57 +1,43 @@
-
-form{
-    width:30%;
-    margin:100px auto;
-    padding:30px;
-    border:1px solid #555;
-    background-color: rgba(255, 255, 255, .15);  
-    backdrop-filter: blur(5px);
-    border-radius:20px;
+form {
+  width: 30%;
+  margin: 100px auto;
+  padding: 30px;
+  border: 1px solid #555;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
 }
-input{
-     width:100%;
-     border:1px solid #f1e1e1;
-     display: block;
-     padding: 5px 10px;
-     color: #ff00aa;
-   }
-button{
-    border:none;
-    padding:10px;
-    border-radius: 10px;
-    background-color: black;
-    color:white;
+input {
+  width: 100%;
+  border: 1px solid #f1e1e1;
+  display: block;
+  padding: 5px 10px;
+  color: #ff00aa;
 }
-
-table{
-width:60%;
-border-collapse: collapse;
-margin: 100px auto; 
-background-color: rgba(255, 255, 255, .15);  
-backdrop-filter: blur(5px);
-border-radius: 20px;
+button {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: black;
+  color: black;
 }
 
-th,td{
-height: 50px;
-vertical-align:center;
-border:1px solid black;
-color: white;
-
-}
-body{
-    background-image: url('images/uploadbg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0%;
+table {
+  width: 60%;
+  border-collapse: collapse;
+  margin: 100px auto;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
 }
 
-
-
-
-
-
-
-
-
-
+table th,
+td {
+  height: 50px;
+  vertical-align: center;
+  border: 1px solid black;
+  color: black;
+}
+body {
+  background-color: black;
+}
